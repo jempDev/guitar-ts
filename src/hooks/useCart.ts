@@ -1,11 +1,12 @@
 import { useMemo } from 'react';
 import { useState, useEffect } from 'react';
 import { db } from '../data/db';
+import type { Guitar } from '../types';
 
 export const useCart = () => {
-  const initialCart = () => {
-    const localStorageCart = JSON.parse(localStorage.getItem('cart'));
-    return localStorageCart ? JSON.parse(localStorage.getItem('cart')) : [];
+  const initialCart = () :Guitar[] => {
+    const localStorageCart = localStorage.getItem('cart');
+    return localStorageCart ? JSON.parse(localStorageCart) : [];
   };
   const [data] = useState(db);
   const [cart, setCart] = useState(initialCart);
