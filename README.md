@@ -1,50 +1,19 @@
-# React + TypeScript + Vite
+# Tienda Online de Guitarras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda online de guitarras que permite a los usuarios explorar un catálogo de guitarras y agregarlas al carrito de compras. Los usuarios pueden agregar hasta 5 guitarras al carrito y el sistema realiza los cálculos automáticamente para cada guitarra agregada o eliminada.
 
-Currently, two official plugins are available:
+## 📋 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Catálogo de guitarras**: Los usuarios pueden ver un catálogo con diferentes modelos de guitarras.
+- **Carrito de compras**: Los usuarios pueden agregar guitarras al carrito con un límite de hasta 5 unidades.
+- **Cálculos automáticos**: Cada vez que se agrega o elimina una guitarra del carrito, se recalcula el total de la compra.
+- **Interfaz interactiva**: Permite a los usuarios interactuar fácilmente con el catálogo y el carrito.
 
-## Expanding the ESLint configuration
+## ⚙️ Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para instalar y ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/usuario/nombre-del-repositorio.git
+   ```
